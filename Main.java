@@ -4,15 +4,13 @@ class Main {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         Player p = new Player("", 100, false, 20);
-        Diamond d;
+        Diamond d = new Diamond(100, 0, false);
         int lvlCount = 0;
-        float mostRecentTime;
-        
+
        /*  */ //intro
         if (lvlCount == 0){
             System.out.println("Welcome to .+*Haunted Mansion*+. boooooooo~~~");
             System.out.println("But don't fret! this game is definitely not as scary as the Google Coursera course :3 But there's lots of reading.. (did NOT want to make a GUI)");
-            mostRecentTime = (float)(System.currentTimeMillis());
             System.out.println("...");
             System.out.print("Want to hear how to get out? Type Y or N: ");
             String input = s.nextLine();
@@ -33,11 +31,13 @@ class Main {
             System.out.println("First, enter your name: ");
             p.setName(s.nextLine());
             p.printStats();
+            d.printStats();
+            System.out.println("Great! Seems like you're ready -- let's start!");
+            lvlCount++;
+        }
 
-
-
-
-            
+        if (lvlCount == 1) {
+            Level lvl1 = new Level("test", "Phishing", 25, 2);
         }
     }
 }
