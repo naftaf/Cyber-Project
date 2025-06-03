@@ -4,7 +4,7 @@ class Main {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         Player p = new Player("", 100, false, 20);
-        Diamond d = new Diamond(100, 0, false);
+        Diamond d = new Diamond(100, 0, 100, false);
         int lvlCount = 0;
 
        /*  */ //intro
@@ -38,6 +38,8 @@ class Main {
 
         if (lvlCount == 1) {
             Level lvl1 = new Level("test", "Phishing", 25, 2);
+            lvl1.printAnswers();
+
         }
     }
 }

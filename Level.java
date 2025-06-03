@@ -15,8 +15,8 @@ public class Level {
         System.out.println("1) " + a1);
         System.out.println("2) " + a2);
         System.out.println("3) " + a3);
-
     }
+
     public void attack(){
         String a1 = "";
         String a2 = "";
@@ -32,10 +32,11 @@ public class Level {
             a2 += "---------------------------------------------------------------------------------------------- \n" +
                     "texthelp@geicomail.com: \n" +
                     "Hello, \n" +
-                    "\nWe have noticed an unusual lack of activity from your vehicle."
+                    "\nWe have noticed an unusual lack of activity from your vehicle." +
+                    "For this reason, we have paused your insurance payments." +
+                    "Please contact your Geico agent to make any changes." +
                     "----------------------------------------------------------------------------------------------";
             a3 += "Bug: taht diamond is soooooooooooo cool -- why dn't you tell me mor?";
-
         }
     }
 
